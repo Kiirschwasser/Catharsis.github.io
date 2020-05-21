@@ -1,0 +1,376 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  background: #2b2b2b;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 11pt;
+  font-weight: 300;
+  color: #6c6c6c;
+  background: white;
+}
+h1,
+h2 {
+  margin:0;
+  padding: 0;
+  font-weight: 600;
+  color: #454445;
+}
+h3 {
+  text-align: center;
+}
+p {
+  margin-top: 0;
+}
+ul {
+  padding: 0;
+  list-style: none;
+  margin-top: 0;
+}
+p {
+  line-height: 180%;
+}
+.container {
+  margin: 0px auto;
+  width: 1200px;
+}
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+#header-wrapper {
+  background: #2b2b2b;
+}
+#header {
+  position: relative;
+  height: 100px;
+}
+/*********************************************************************************/
+/* Logo                                                                          */
+/*********************************************************************************/
+#logo {
+  position: absolute;
+  top: 1em;
+  width: 100%;
+}
+/*********************************************************************************/
+/* Menu                                                                          */
+/*********************************************************************************/
+#menu {
+  position: absolute;
+  right: 0;
+  top: 3em;
+}
+#menu ul {
+  display: inline-block;
+}
+#menu ul li {
+  display: block;
+  width: 154px;
+  position: relative;
+  float: left;
+  text-align: center;
+  background: #2b2b2b;
+}
+#menu ul li a {
+  display: inline-block;
+  margin-left: 1px;
+  padding: 1em 1.5em 0em 1.5em;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  font-size: 1em;
+  text-transform: uppercase;
+  outline: 0;
+  color: #fff;
+}
+#menu ul li ul {
+  display: none;
+  margin-top: 10px;
+}
+#menu ul li:hover > ul {
+  display: block;
+  padding-bottom: 120px;
+}
+#menu ul li ul li a {
+  text-transform: none;
+  padding: 5px 20px;
+}
+#menu li a:hover {
+  color: #8dc63f;
+}
+/*********************************************************************************/
+/* Banner                                                                        */
+/*********************************************************************************/
+#header-featured {
+  padding: 15em 0em;
+  background-image: url(../images/ALT-J-Band.jpg);
+  background-position: center;
+  background-size: cover;
+}
+#banner {
+  overflow: hidden;
+  width: 1500px;
+  height: 500px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.5em;
+}
+#banner h2 {
+  margin-top: 5em;
+  padding-bottom: 0.5em;
+  font-weight: 400;
+  font-size: 3em;
+  color: white;
+}
+/*********************************************************************************/
+/* Контент                                                                    */
+/*********************************************************************************/
+#featured-wrapper {
+  /*Вся часть между баннером и футером*/
+  overflow: hidden;
+  padding: 5em 0em;
+  background: #fff;
+}
+#featured .main-title {
+  margin-bottom: 1em;
+}
+#featured .main-title h2 {
+  font-size: 4em;
+}
+#featured .byline {
+  font-size: large;
+}
+.title .byline {
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2em;
+  color: #6f6f6f;
+  margin-bottom: 3em;
+}
+#featured p {
+  font-size: 20px;
+}
+.Rightimg {
+  float: right; /* Выравнивание по правому краю  */
+  margin: 7px 0 7px 7px; /* Отступы вокруг картинки */
+}
+.Audio {
+  margin-bottom: 20px;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*********************************************************************************/
+/* footer                                                                    */
+/*********************************************************************************/
+#footer {
+  overflow: hidden;
+  padding: 2em 0em 2em 0em;
+  background: #2b2b2b;
+  width: auto;
+}
+#footer p {
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  color: rgba(255, 255, 255, 0.3);
+}
+#footer a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+}
+/*********************************************************************************/
+/* Таблица                                                                 */
+/*********************************************************************************/
+
+.AlbumTable {
+  border-collapse: collapse;
+  margin: 75px auto;
+  border: 3px solid grey;
+}
+.AlbumTable td {
+  border: 1px solid grey;
+  text-align: center;
+  vertical-align: top;
+  padding: 0 0.1cm;
+}
+/*********************************************************************************/
+/* Слайдер                                                                 */
+/*********************************************************************************/
+#slider {
+  /*положение слайдера*/
+  position: relative;
+  text-align: center;
+  top: 100px;
+}
+
+#slider {
+  /*центровка слайдера*/
+  margin: 0 auto;
+}
+
+#slides h4 {
+  /*все изображения справа друг от доруга*/
+  width: 20%;
+  float: left;
+}
+
+#slides .image {
+  /*устанавливает общий размер блока с изображениями*/
+  width: 500%;
+  line-height: 0;
+}
+
+#overflow {
+  /*сркывает все, что находится за пределами этого блока*/
+  width: 100%;
+  overflow: hidden;
+}
+
+h4 {
+  /*размер изображений слайдера*/
+  width: 100%;
+}
+
+#desktop:checked ~ #slider {
+  /*размер всего слайдера*/
+  max-width: 960px; /*максимальнная длинна*/
+}
+
+/*настройка переключения и положения для левой стрелки*/
+/*если свич1-3 активны, то идет обращение к лейблу из блока с id контролс*/
+#switch1:checked ~ #controls label:nth-child(3),
+#switch2:checked ~ #controls label:nth-child(1),
+#switch3:checked ~ #controls label:nth-child(2) {
+  background: url("../images/prev.png") no-repeat; /*заливка фона картинкой без повторений*/
+  float: left;
+  margin: -100px 0 0 -84px; /*сдвиг влево*/
+  display: block;
+  height: 80px;
+  width: 80px;
+}
+
+/*настройка переключения и положения для правой стрелки*/
+#switch1:checked ~ #controls label:nth-child(2),
+#switch2:checked ~ #controls label:nth-child(3),
+#switch3:checked ~ #controls label:nth-child(1) {
+  background: url("../images/next.png") no-repeat; /*заливка фона картинкой без повторений*/
+  float: right;
+  margin: -100px -84px 0 0; /*сдвиг вправо*/
+  display: block;
+  height: 80px;
+  width: 80px;
+}
+label,
+a {
+  /*при наведении на стрелки или переключатели - курсор изменится*/
+  cursor: pointer;
+}
+
+.gallery input {
+  /*скрывает стандартные инпуты (чекбоксы) на странице*/
+  display: none;
+}
+
+/*позиция изображения при активации переключателя*/
+#switch1:checked ~ #slides .image {
+  margin-left: 0;
+}
+
+#switch2:checked ~ #slides .image {
+  margin-left: -100%;
+}
+
+#switch3:checked ~ #slides .image {
+  margin-left: -200%;
+}
+#controls {
+  /*положение блока всех управляющих элементов*/
+  margin: -25% 0 0 0;
+  width: 100%;
+  height: 10px;
+}
+
+#active label {
+  /*стиль отдельного переключателя*/
+  border-radius: 10px; /*скругление углов*/
+  display: inline-block; /*расположение в строку*/
+  width: 15px;
+  height: 15px;
+  background: #bbb;
+}
+
+#active {
+  /*расположение блока с переключателями*/
+  margin: 25% 0 0;
+  text-align: center;
+}
+
+#active label:hover {
+  /*поведение чекбокса при наведении*/
+  background: #51613b;
+  border-color: #777 !important; /*выполнение в любом случае*/
+}
+
+/*цвет активного лейбла при активации чекбокса*/
+#switch1:checked ~ #active label:nth-child(1),
+#switch2:checked ~ #active label:nth-child(2),
+#switch3:checked ~ #active label:nth-child(3) {
+  background: #8dc63f;
+  border-color: #8dc63f !important;
+}
+
+#slides .image {
+  /*анимация пролистывания изображений*/
+  transition: all 800ms cubic-bezier(0.77, 0, 0.175, 1);
+}
+.gallery {
+  background-color: white;
+  padding-bottom: 150px;
+}
+.gallery h2 {
+  margin-top: 25px;
+  padding-left: 50px;
+  font-weight: 600;
+  color: #454445;
+  font-size: 36px;
+}
+/*********************************************************************************/
+/* Концерты                                                               */
+/*********************************************************************************/
+.Concert table {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+  font-size: 14px;
+  width: 960px;
+  background: #252f48;
+  margin-bottom: 25px;
+  margin: 25px auto;
+}
+.Concert th {
+  color: #edb749;
+  border-bottom: 1px solid green;
+  padding: 12px 17px;
+  margin: 250px 250px;
+}
+.Concert td {
+  color: #cad4d6;
+  padding: 7px 17px;
+  margin: 250px 250px;
+}
+.Concert td:first-child {
+  border-left: 2px solid green;
+}
+.Concert h2 {
+  margin-top: 25px;
+  padding-left: 50px;
+  font-weight: 600;
+  color: #454445;
+  font-size: 28px;
+}
+

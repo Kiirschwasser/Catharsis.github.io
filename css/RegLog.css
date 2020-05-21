@@ -1,0 +1,150 @@
+html,
+body {
+  height: 100%;
+  background: black;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  background: url(../images/Reg.jpg) center no-repeat;
+  background-size: cover;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 11pt;
+  font-weight: 300;
+  color: #6c6c6c;
+}
+h1,
+h2 {
+  margin: 0 0 10px 0;
+  padding: 0;
+  font-weight: 600;
+  color: #454445;
+}
+ul {
+  padding: 0;
+  list-style: none;
+  margin-top: 0;
+}
+p {
+  line-height: 180%;
+}
+.container {
+  margin: 0px auto;
+  width: 1200px;
+}
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+#header-wrapper {
+  background: #2b2b2b;
+}
+#header {
+  position: relative;
+  height: 100px;
+}
+/*********************************************************************************/
+/* Logo                                                                          */
+/*********************************************************************************/
+#logo {
+  position: absolute;
+  top: 1em;
+  width: 100%;
+}
+/*********************************************************************************/
+/* Menu                                                                          */
+/*********************************************************************************/
+#menu {
+  position: absolute;
+  right: 0;
+  top: 3em;
+}
+#menu ul {
+  display: inline-block;
+}
+#menu ul li {
+  display: block;
+  width: 154px;
+  position: relative;
+  float: left;
+  text-align: center;
+  background: #2b2b2b;
+}
+#menu ul li a {
+  display: inline-block;
+  margin-left: 1px;
+  padding: 1em 1.5em 0em 1.5em;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  font-size: 1em;
+  text-transform: uppercase;
+  outline: 0;
+  color: #fff;
+}
+#menu ul li ul {
+  display: none;
+  margin-top: 10px;
+}
+#menu ul li:hover > ul {
+  display: block;
+  padding-bottom: 120px;
+}
+#menu ul li ul li a {
+  text-transform: none;
+  padding: 5px 20px;
+}
+#menu li a:hover {
+  color: #8dc63f;
+}
+/*********************************************************************************/
+/* Регистрация                                                               */
+/*********************************************************************************/
+* {
+  box-sizing: border-box;
+}
+.Reg {
+  margin: 0 auto;
+  padding: 17px;
+  background-color: white;
+  margin-top: 150px;
+  width: 480px;
+  height: 525px;
+  max-height: 525px;
+}
+.Login {
+  background-color: #4caf50;
+  padding: 16px 20px;
+  width: 100%;
+}
+.Login:hover {
+  background-color: #418343;
+}
+.Reg h1 {
+  margin-bottom: 10px;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+/*********************************************************************************/
+/* Дополнительно для Входа                                                               */
+/*********************************************************************************/
+* {
+  box-sizing: border-box;
+}
+.Log {
+  background-color: white;
+  max-width: 300px;
+  padding: 16px;
+  margin: 0 auto;
+  margin-top: 150px;
+  position: relative;
+  right: 0;
+}
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  border: none;
+  padding: 17px;
+  margin: 10px 0 10px 0;
+  background: #f1f1f1;
+}

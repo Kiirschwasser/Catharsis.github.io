@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Alt-J</title>
+    <link href="../css/RegLog.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!--Верхушка с Лого и меню-->
+    <div id="header-wrapper">
+      <div id="header" class="container">
+        <div id="logo">
+          <h3>
+            <a href="#"><img src="../images/alt-j-logo1.png" alt="Logo" /></a>
+          </h3>
+        </div>
+        <!--Навигация-->
+        <div id="menu">
+          <ul>
+            <li><a href="../index.html">Главная</a></li>
+            <li>
+              <a>Альбомы</a>
+              <ul>
+                <li><a href="AnAwesomeWave.html">An Awesome Wave</a></li>
+                <li><a href="ThisIsAllYours.html">This Is All Yours</a></li>
+                <li><a href="RELAXER.html">Relaxer</a></li>
+              </ul>
+            </li>
+            <li><a href="Galery.html">Галерея</a></li>
+            <li><a href="Concert.html">Концерты</a></li>
+            <li><a href="Reg.html">Регистрация</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--Основная часть, для главной страницы это будет информация о группе-->
+    <div class="Log">
+      <form action="../index.html">        
+        <h1>Вход</h1>
+        <label><b>Эл.Почта</b></label>
+        <input
+          type="text"
+          placeholder="Введите электронную почту"
+          name="email"
+          required
+        />
+        <label><b>Пароль</b></label>
+        <input
+          type="password"
+          placeholder="Введите Пароль"
+          name="psw"
+          required
+        />
+        <button type="submit" class="Login">Вход</button>
+        <p>Нет Аккаунта?<a href="Reg.html">Регистрация</a>.</p>
+      </form>
+    </div>    
+  </body>
+</html>
